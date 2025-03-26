@@ -9,49 +9,58 @@
       rel="stylesheet"
     />
   </head>
-  <body class="container py-5">
-    <h1 class="mb-4">More About You</h1>
+  <body class="bg-light">
+    <div class="container mt-5">
+      <div class="card p-4 shadow col-lg-6 mx-auto">
+        <h1 class="mb-4 text-center">More About You</h1>
 
-    <form action="thankyou.html" method="post">
-      <div class="mb-3">
-        <label for="experience" class="form-label"
-          >Experience Level in Tech</label
-        >
-        <select id="experience" name="experience" class="form-select" required>
-          <option value="">-- Select --</option>
-          <option value="beginner">Beginner</option>
-          <option value="intermediate">Intermediate</option>
-          <option value="advanced">Advanced</option>
-        </select>
+        <form action="thankyou.html" method="post">
+          <div class="mb-3">
+            <label for="experience" class="form-label"
+              >Experience Level in Tech</label
+            >
+            <select
+              id="experience"
+              name="experience"
+              class="form-select"
+              required
+            >
+              <option value="">-- Select --</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="interest" class="form-label"
+              >What are you interested in?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="interest"
+              name="interest"
+              placeholder="e.g. Web Dev, Data, UX"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="comments" class="form-label"
+              >Comments or Suggestions</label
+            >
+            <textarea
+              class="form-control"
+              id="comments"
+              name="comments"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">Submit</button>
+        </form>
       </div>
-
-      <div class="mb-3">
-        <label for="interest" class="form-label"
-          >What are you interested in?</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="interest"
-          name="interest"
-          placeholder="e.g. Web Development, Data Analytics"
-          required
-        />
-      </div>
-
-      <div class="mb-3">
-        <label for="comments" class="form-label"
-          >Any comments or suggestions?</label
-        >
-        <textarea
-          class="form-control"
-          id="comments"
-          name="comments"
-          rows="4"
-        ></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-success">Submit</button>
-    </form>
+    </div>
   </body>
 </html>
